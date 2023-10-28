@@ -1,7 +1,7 @@
 # JokeLedgeVoron
 Backup for Voron 2.4
 
-`pizzR` is currently only available through GitHub and can be downloaded easily using devtools:
+Use following script to toogle WIFI on or of on startup if Ethernet is plugged in:
 
 ```
 #!/bin/bash
