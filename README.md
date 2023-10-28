@@ -1,8 +1,11 @@
 # JokeLedgeVoron
-Backup for Voron 2.4
+Backup for our Voron 2.4
 
-Use following script to toogle WIFI on or of on startup if Ethernet is plugged in:
+Use the following script to toogle WIFI on or of on startup if Ethernet is plugged in :
 
+```
+nano /usr/local/bin/disable_wifi_on_ethernet.sh
+```
 ```
 #!/bin/bash
 # Toogle WIFI-Status at System-Startup
