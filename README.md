@@ -14,6 +14,8 @@ sudo nano /usr/local/bin/disable_wifi_on_ethernet.sh
 #!/bin/bash
 # Toogle WIFI-Status at System-Startup
 
+sleep 5
+
 ETHSTATUS=$(sudo ethtool eth0 | tail -n 1 | rev | cut -c 1-3 | rev)
 
 if [ $ETHSTATUS == "yes" ]; then
