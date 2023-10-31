@@ -35,8 +35,8 @@ fi
 sudo nano /etc/udev/rules.d/70-toogle-wifi-on-ethernet.rules
 ```
 ```
-ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan*", RUN+="/usr/sbin/rfkill unblock wlan"
-ACTION=="remove", SUBSYSTEM=="net", KERNEL=="wlan*", RUN+="/usr/sbin/rfkill block wlan"
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="eth*", RUN+="/usr/sbin/rfkill block wlan"
+ACTION=="remove", SUBSYSTEM=="net", KERNEL=="eth*", RUN+="/usr/sbin/rfkill unblock wlan"
 ```
 ```
 sudo udevadm control --reload-rules
