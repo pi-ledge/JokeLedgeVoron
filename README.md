@@ -1,5 +1,5 @@
 # JokeLedgeVoron
-> *Copyright 2023 [Michael Lechner]. Licensed under the MIT license.*
+> *Copyright 2023 [Michael Lechner]. Licensed under the Unlicense.*
 
 Backup for our Voron 2.4
 
