@@ -20,12 +20,12 @@ ETHSTATUS=$(sudo ethtool eth0 | tail -n 1 | rev | cut -c 1-3 | rev)
 
 if [ $ETHSTATUS == "yes" ]; then
     /usr/sbin/rfkill block wlan
-    echo deaktivieren
-    echo "WIFI deakiviert" | sudo tee -a /home/piledge/wifi_status.txt
+    #echo WIFI inactive
+    #echo "WIFI inactive" | sudo tee -a /home/piledge/wifi_status.txt
 else
     /usr/sbin/rfkill unblock wlan
-    echo aktivieren
-    echo "WIFI aktiviert" | sudo tee -a /home/piledge/wifi_status.txt
+    #echo WIFI active
+    #echo "WIFI active" | sudo tee -a /home/piledge/wifi_status.txt
 fi
 ```
 
